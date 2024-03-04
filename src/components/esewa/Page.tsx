@@ -6,6 +6,7 @@ import QRCode from "qrcode.react";
 
 
 
+
 const Page = () => {
   const uuid: string = UUID.generate();
 
@@ -164,7 +165,8 @@ const Page = () => {
       </form>
       <div className="ml-8">
         {/* Render QR code with donation link URL */}
-        <QRCode value={`https://rc-epay.esewa.com.np/api/epay/main/v2/form?total_amount=${totalAmount}&transaction_uuid=${transactionUuid}&product_code=${productCode}`} />
+        {/* <QRCode value={`https://rc-epay.esewa.com.np/api/epay/main/v2/form?total_amount=${totalAmount}&transaction_uuid=${transactionUuid}&product_code=${productCode}`} /> */}
+        
       </div>
     </div>
   );
