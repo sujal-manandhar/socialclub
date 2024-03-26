@@ -10,6 +10,7 @@ import Programs from './components/Programs'
 import AddProgram from './components/AddProgram'
 import Page from './components/esewa/Page'
 import EsewaSuccess from './components/esewa/EsewaSuccess'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
 
 <BrowserRouter>
 <Navbar/>
+
+
   <Routes>
     <Route path="/" element={<Home/>}></Route>
     <Route path="/aboutus" element={<Aboutus/>}></Route>
@@ -26,11 +29,13 @@ function App() {
     <Route path='/news' element={<News/>}></Route>
     <Route path='/programs' element={<Programs/>}></Route>
     <Route path='/addprograms' element={<AddProgram/>}></Route>
+    
     <Route path='/esewa' element={<Page/>}></Route>
     <Route path='/success' element={<EsewaSuccess/>}></Route>
     
 
   </Routes> 
+  <Footer/>
  
 </BrowserRouter>
 

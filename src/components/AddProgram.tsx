@@ -38,8 +38,8 @@ function AddProgram() {
         <input type="text" value={address} onChange={(e)=> setAddress(e.target.value)} className='w-full   border-black border-2' />
       </div>
       
-      <div className="mt-8">
-        <button type="submit">Add</button>
+      <div className="mt-8 flex items-center justify-center">
+        <button className="bg-blue-500 px-4  text-white font-semibold rounded-md  " type="submit">Add</button>
       </div>
    
       

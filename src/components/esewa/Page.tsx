@@ -3,7 +3,7 @@ import { UUID } from "uuidjs";
 import cryptoJS from "crypto-js";
 import { useSearchParams } from "react-router-dom";
 import QRCode from "qrcode.react";
-
+import QRImg from "../../img/QRImg.png"
 
 
 
@@ -166,7 +166,7 @@ const Page = () => {
       <div className="ml-8">
         {/* Render QR code with donation link URL */}
         {/* <QRCode value={`https://rc-epay.esewa.com.np/api/epay/main/v2/form?total_amount=${totalAmount}&transaction_uuid=${transactionUuid}&product_code=${productCode}`} /> */}
-        
+        <img src={QRImg} className="w-[20vh] h-[20vh]"alt="QR Img"/>
       </div>
     </div>
   );
